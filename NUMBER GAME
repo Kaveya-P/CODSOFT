@@ -5,9 +5,11 @@ public class Main
 	public static void main(String[] args) {
 	    Scanner sc = new Scanner(System.in);
 		System.out.println("***NUMBER GAME***");
-		int no = 3;
+		
+		boolean bool = true;
+		while(bool){
+		    int no = 3;
 		int score = 0;
-		while(true){
 		    while(no>0){
 		    System.out.println("You have got "+no+" guesses....");
 		    System.out.print("Enter your guess: ");
@@ -32,9 +34,9 @@ public class Main
 		System.out.print("Do you want to play again? ");
 		String ans = sc.next();
 		if(ans.equals("yes")|| ans.equals("Yes")){
-		    continue;
+		    bool = true;
 		}else{
-		    break;
+		    bool= false;
 		}
 		}
 		
