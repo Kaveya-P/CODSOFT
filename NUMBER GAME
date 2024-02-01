@@ -9,24 +9,24 @@ public class Main
 		boolean bool = true;
 		while(bool){
 		    int no = 3;
-		int score = 0;
+		    int score = 0;
 		    while(no>0){
-		    System.out.println("You have got "+no+" guesses....");
-		    System.out.print("Enter your guess: ");
-    		int guess = sc.nextInt();
-    		int max = 100;
-    		int min = 1;
-    		int randomNumber = (int)(Math.random()*max)+min;
-    		System.out.println("The random number is "+randomNumber);
-    		if(randomNumber==guess){
-    		    System.out.println("Correct Guess");
-    		    score +=1;
-    		}else if(randomNumber>guess){
-    		    System.out.println("Too Low");
-    		}else{
-    		    System.out.println("Too High");
-    		}
-    		no-=1;
+		        System.out.println("You have got "+no+" guesses....");
+		        System.out.print("Enter your guess: ");
+	    		int guess = sc.nextInt();
+	    		int max = 100;
+	    		int min = 1;
+	    		int randomNumber = (int)(Math.random()*max)+min;
+	    		System.out.println("The random number is "+randomNumber);
+	    		if(randomNumber==guess){
+	    		    System.out.println("Correct Guess");
+	    		    score +=1;
+	    		}else if(randomNumber>guess){
+	    		    System.out.println("Too Low");
+	    		}else{
+	    		    System.out.println("Too High");
+	    		}
+	    		no-=1;
     		
 		}
 		System.out.println("----------------------");
